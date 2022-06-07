@@ -6,6 +6,6 @@ RUN npm install
 COPY . .
 RUN npm run build
 ### STAGE 2: Run ###
-FROM nginx:1.17.1-alpine
+FROM nginx:1.22.0-alpine
 COPY dockerfiles/nginx/nginx.conf /etc/nginx/nginx.conf
 COPY --from=build /usr/src/app/dist/app-todo /usr/share/nginx/html

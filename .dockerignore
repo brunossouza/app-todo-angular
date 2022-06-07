@@ -1,0 +1,10 @@
+node_modules/**
+dist/**
+dockerfiles/**
+.env/**
+.vscode/**
+.vscodeignore/**
+.gitignore
+.gitattributes
+.gitmodules
+.travis.yml
